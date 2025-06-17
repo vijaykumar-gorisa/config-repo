@@ -3,7 +3,7 @@ server:
 
   spring:
     datasource:
-      url:
+      url: jdbc:mysql://mysql:3306/db
         username: admin
         password: admin
 
