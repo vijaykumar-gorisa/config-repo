@@ -1,0 +1,26 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: employee-service
+
+  data:
+    mongodb:
+      uri: mongodb+srv://vijaykumargorisa:vijay7%40Gorisa@vijaycluster.83kxtbt.mongodb.net/employeedb?retryWrites=true&w=majority
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
